@@ -28,7 +28,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-          repository: mxmv/test/pipelinetest
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
